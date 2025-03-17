@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Footprints</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="title">Digital Footprints</div>
+        <div class="auth-links">
+            <a href="#" id="homeBtn">Home</a>
+            <a href="#" id="featuresBtn">Features</a>
+            <a id="signInBtn" class="btn" style="display: none;">Sign in</a>
+            <a id="signUpBtn" class="btn" style="display: none;">Sign up</a>
+            <a id="profileBtn" class="btn" style="display: none;">Profile</a>
+            <a id="logoutBtn" class="btn" style="display: none;">Logout</a>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <div class="section" id="homeSection">
+        <div class="main">
+            <div class="left-box">
+                <h1>Protect Privacy Instantly</h1>
+                <p>Digital Footprints detects breaches, tracks logins, and analyzes privacy risks with real-time alerts and AI-driven security insights.</p>
+            </div>
+            <div class="right-box">
+                <div class="feature-container">
+                    <a href="index3.html" class="feature">Data Breach</a>
+                    <a href="index1.html" class="feature">Website Privacy Scanner</a>
+                    <a href="anonymous-login.html" class="feature">Email Validation/Detection</a>
+                    <a href="index2.html" class="feature">Password Leak</a>
+                    <a href="privacy-score.html" class="feature">Privacy Score</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!-- Features Section -->
+<div class="section" id="featuresSection">
+    <section class="features-page">
+        <h2>Our Features</h2>
+        <div class="features-container">
+            <div class="features-box">
+                <div class="feature-row">
+                    <div class="feature-title">Dark Web Monitoring</div>
+                    <div class="feature-description">Scans for leaked credentials and alerts users.</div>
+                </div>
+                <hr>
+                <div class="feature-row">
+                    <div class="feature-title">Website Privacy Scanner</div>
+                    <div class="feature-description">Identifies tracking threats and suggests fixes.</div>
+                </div>
+                <hr>
+                <div class="feature-row">
+                    <div class="feature-title">Anonymous Login Detection</div>
+                    <div class="feature-description">Detects and alerts suspicious or anonymous logins in real time.</div>
+                </div>
+                <hr>
+                <div class="feature-row">
+                    <div class="feature-title">Password Leak</div>
+                    <div class="feature-description">Detects whether the password is present in previous leaked data breaches.</div>
+                </div>
+                <hr>
+                <div class="feature-row">
+                    <div class="feature-title">Privacy Score</div>
+                    <div class="feature-description">Rates privacy risk based on breaches, tracking, and dark web exposure.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- FAQ Section (Now Separate from Footer) -->
+<div class="faq-section" id="faqSection">
+    <h2 class="faq-title">We're here to help</h2>
+    <p class="faq-subtitle">FAQs designed to provide the information you need.</p>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">What are AI development services?</button>
+            <div class="faq-answer">AI development services involve creating machine learning models, chatbots, automation solutions, and AI-powered applications.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What types of processes can be automated using AI?</button>
+            <div class="faq-answer">AI can automate customer support, data analysis, fraud detection, process optimization, and many other business operations.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How long does it take to implement AI automation?</button>
+            <div class="faq-answer">Implementation time depends on complexity, but AI solutions can take anywhere from weeks to several months.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Will AI automation disrupt my current operations?</button>
+            <div class="faq-answer">AI automation can integrate smoothly with minimal disruption when planned and deployed correctly.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How much does AI automation cost?</button>
+            <div class="faq-answer">Costs vary based on the solution, ranging from affordable SaaS tools to custom enterprise-level AI applications.</div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section (Now Separate) -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-section brand-section">
+            <div class="logo">
+                <span class="brand">DigitalFootprints</span>
+            </div>
+            <p>Protect Privacy Instantly</p>
+        </div>
+
+        <!-- Footer FAQs -->
+        
+
+        <!-- Contact Section -->
+        <div class="footer-section contact-section">
+            <h3>Contact</h3>
+            <p>Cummins College of Engineering, Pune</p>
+            <p><a href="tel:9607552333">960-755-2333</a></p>
+            <p><a href="mailto:info@mysite.com">padwalrahi@gmail.com</a></p>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-section newsletter-section">
+            <h3>Get Updates</h3>
+            <input type="email" id="email" placeholder="Enter your email">
+            <div class="subscribe-box">
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe"> Subscribe me</label>
+            </div>
+            <button class="subscribe-btn" onclick="subscribe()">Subscribe</button>
+        </div>
+    </div>
+    <p class="footer-note">© 2025 DigitalFootprints.</p>
+</footer>
+
+
+    <script src="script.js"></script>
+    
+
+    <!-- Chatbot Icon -->
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712038.png" alt="Chatbot Icon" class="chatbot-icon" onclick="toggleChat()">
+
+    <!-- Chatbot Container -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">Cybersecurity Chatbot</div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Ask about cybersecurity..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleChat() {
+            const chatContainer = document.getElementById("chatContainer");
+            chatContainer.style.display = (chatContainer.style.display === "none" || chatContainer.style.display === "") ? "flex" : "none";
+        }
+
+        const responses = {
+            // Greetings
+            "hi": "Hello! How can I assist you with cybersecurity?",
+            "hello": "Hi there! Ask me anything about security.",
+            "how are you": "I'm here and ready to help with cybersecurity-related queries.",
+
+            // Cybersecurity FAQs
+            "how can i check if my email has been breached": "You can use our breach detection tool to scan databases for leaked credentials.",
+            "what should i do if my data is found in a breach": "Change your passwords immediately, enable two-factor authentication, and monitor for suspicious activity.",
+            "what is dark web monitoring": "It scans dark web forums and marketplaces for leaked credentials and compromised accounts.",
+            "how do i know if my credentials are on the dark web": "Our system checks databases and alerts you if any of your data is found.",
+            "how is my privacy score calculated": "It considers data breaches, trackers, cookies, VPN usage, and account security levels.",
+            "how can i improve my privacy score": "Use strong passwords, enable 2FA, clear cookies, and use a secure browser.",
+            "what is the best way to secure my accounts": "Use a password manager, enable multi-factor authentication, and avoid phishing links.",
+            "how do i know if a website is tracking me": "You can use our website privacy scanner to check for tracking cookies and fingerprinting scripts.",
+            "do i need a vpn for better privacy": "Yes, a VPN hides your IP address and encrypts your traffic, improving online security.",
+            "how do i know if i’m being tracked": "Our scanner can detect tracking cookies and scripts used by websites.",
+            "what are common signs of phishing": "Fake emails, urgent messages, suspicious links, and requests for sensitive information.",
+            "how can i protect myself from malware": "Keep software updated, use antivirus software, and avoid downloading unverified files.",
+            "what is two-factor authentication": "2FA adds an extra layer of security by requiring a second step, like a code sent to your phone.",
+            "is public wifi safe": "Not always! Use a VPN or avoid accessing sensitive accounts on public networks.",
+            "how can i create a strong password": "Use at least 12 characters, mix letters, numbers, symbols, and avoid common words.",
+            "what is ransomware": "Ransomware is malware that locks your files and demands payment to unlock them.",
+            "how do hackers steal passwords": "Through phishing, keyloggers, data breaches, and weak passwords.",
+            "how can i check if my email has been breached": "You can use our breach detection tool to scan databases for leaked credentials.",
+            "what should i do if my data is found in a breach": "Change your passwords immediately, enable two-factor authentication, and monitor for suspicious activity.",
+            "what is dark web monitoring": "It scans dark web forums and marketplaces for leaked credentials and compromised accounts.",
+            "how do i know if my credentials are on the dark web": "Our system checks databases and alerts you if any of your data is found.",
+            "how is my privacy score calculated": "It considers data breaches, trackers, cookies, VPN usage, and account security levels.",
+            "how can i improve my privacy score": "Use strong passwords, enable 2FA, clear cookies, and use a secure browser.",
+            "what is the best way to secure my accounts": "Use a password manager, enable multi-factor authentication, and avoid phishing links.",
+            "how do i know if a website is tracking me": "You can use our website privacy scanner to check for tracking cookies and fingerprinting scripts.",
+            "do i need a vpn for better privacy": "Yes, a VPN hides your IP address and encrypts your traffic, improving online security.",
+            "how do i know if i’m being tracked": "Our scanner can detect tracking cookies and scripts used by websites.",
+            "what are common signs of phishing": "Fake emails, urgent messages, suspicious links, and requests for sensitive information.",
+            "how can i protect myself from malware": "Keep software updated, use antivirus software, and avoid downloading unverified files.",
+            "what is two-factor authentication": "2FA adds an extra layer of security by requiring a second step, like a code sent to your phone.",
+            "is public wifi safe": "Not always! Use a VPN or avoid accessing sensitive accounts on public networks.",
+            "how can i create a strong password": "Use at least 12 characters, mix letters, numbers, symbols, and avoid common words.",
+            "what is ransomware": "Ransomware is malware that locks your files and demands payment to unlock them.",
+            "how do hackers steal passwords": "Through phishing, keyloggers, data breaches, and weak passwords.",
+            "what is cybersecurity": "Cybersecurity is the practice of protecting systems, networks, and data from cyber threats and unauthorized access.", 
+            "why is cybersecurity important": "Cybersecurity is essential to protect personal and organizational data from cybercriminals, preventing financial losses and data breaches.", 
+            "what are common cyber threats": "Common cyber threats include phishing, malware, ransomware, data breaches, and social engineering attacks.", 
+            "how can i protect my personal data online": "Use strong passwords, enable two-factor authentication, avoid suspicious links, and regularly update your software.", 
+            "what are the best practices for staying safe online": "Avoid clicking on unknown links, use a VPN on public Wi-Fi, and install reliable security software.", 
+            "how do i create a strong password": "A strong password should be at least 12 characters long and include a mix of letters, numbers, and symbols.", 
+            "what is two-factor authentication (2FA)": "2FA adds an extra layer of security by requiring a second form of verification, such as a text message code.", 
+            "why should i use a password manager": "A password manager securely stores and manages complex passwords for different accounts.", 
+            "how often should i change my passwords": "It is recommended to change passwords every 3-6 months, especially for sensitive accounts.", 
+            "what are the risks of reusing passwords": "Reusing passwords increases the risk of credential stuffing attacks, where stolen credentials are used on multiple sites.", 
+            "what is phishing": "Phishing is a type of cyber attack where attackers trick users into providing sensitive information via fake emails or websites.", 
+            "how can i recognize a phishing email": "Look for suspicious sender addresses, urgent messages, and links that redirect to unknown websites.", 
+            "what should i do if i click on a phishing link": "Immediately disconnect from the internet, change your passwords, and scan your device for malware.", 
+            "how can i report a phishing attack": "Report phishing attempts to your email provider and organizations like the Anti-Phishing Working Group (APWG).",
+            "what are common online scams to watch out for": "Common scams include fake tech support calls, lottery scams, and fraudulent online shopping sites.", 
+            "what is a firewall, and how does it work": "A firewall is a security system that monitors and controls incoming and outgoing network traffic.", 
+            "how can i secure my home Wi-Fi network": "Change the default router password, enable WPA3 encryption, and hide the SSID if possible.", 
+            "what is a VPN, and should i use one": "A VPN encrypts your internet traffic, protecting your data from hackers, especially on public networks.", 
+            "what are public Wi-Fi risks, and how can i stay safe": "Public Wi-Fi can be insecure; use a VPN, avoid logging into sensitive accounts, and disable auto-connect.", 
+            "how do i prevent unauthorized access to my network": "Use strong passwords, enable network encryption, and regularly check connected devices.", 
+            "what is malware": "Malware is malicious software designed to harm, exploit, or compromise devices, networks, or data.", 
+            "how does ransomware work": "Ransomware encrypts files and demands payment to restore access to them.", 
+            "how can i prevent a malware attack": "Avoid downloading unknown attachments, keep software updated, and use antivirus software.", 
+            "what should i do if my computer gets infected with a virus": "Disconnect from the internet, run a malware scan, and restore from a backup if necessary.", 
+            "are free antivirus programs effective": "Some free antivirus programs offer basic protection, but premium versions provide better security features.", 
+            "how can i protect my personal information on social media": "Limit profile visibility, avoid sharing sensitive data, and review privacy settings.", 
+            "what is end-to-end encryption": "End-to-end encryption ensures that only the sender and recipient can read the messages.", 
+            "how can i safely store sensitive files": "Use encrypted storage solutions, secure cloud services, and offline backups.", 
+            "what are the risks of using public cloud storage": "Unauthorized access, data leaks, and potential security breaches.", 
+            "how do i safely dispose of old devices with personal data": "Factory reset the device, remove storage media, and use data-wiping software.", 
+            "what are real-time cybersecurity alerts": "Instant notifications triggered when suspicious or malicious activities are detected.", 
+            "how do real-time security alerts work": "They monitor network traffic, login attempts, and data access patterns using AI or rule-based systems.", 
+            "why are real-time alerts important in cybersecurity": "They help detect cyber threats immediately, reducing the risk of data breaches.", 
+            "how can i set up real-time alerts for my website": "Use security tools like SIEM, IDS/IPS, or cloud-based security services like AWS GuardDuty.", 
+            "what should i do if i receive a real-time security alert": "Investigate the alert, verify the threat, and take immediate action such as blocking suspicious IPs.", 
+            "what is dark web monitoring": "Dark web monitoring scans hidden websites for leaked credentials and compromised accounts.", 
+            "how do hackers use the dark web": "Hackers sell stolen data, offer hacking tools, and trade illegal services on the dark web.", 
+            "how can i check if my data is on the dark web": "Use dark web monitoring tools like Have I Been Pwned or Cybersecurity Intelligence Platforms.", 
+            "what should i do if my credentials are found on the dark web": "Change passwords immediately, enable 2FA, and monitor for suspicious activity.", 
+            "what is website privacy scanning": "It analyzes a website for security vulnerabilities, tracking scripts, and compliance with privacy laws.", 
+            "how can i check if my website is secure": "Use tools like Mozilla Observatory, SSL Labs, and Cloudflare Security Scan.", 
+            "what is anonymous login detection": "It identifies users who hide their identities using VPNs, Tor, proxies, or fake credentials.", 
+            "why is anonymous login detection important": "It helps prevent account takeovers, fraud, and unauthorized access.", 
+            "how can websites detect anonymous logins": "They use IP tracking, behavioral analytics, and fingerprinting techniques.", 
+            "what is a privacy score": "A privacy score measures how much personal data you expose online based on security habits.", 
+            "how is a privacy score calculated": "It considers data breaches, trackers, cookies, VPN usage, and account security levels.", 
+            "how can i improve my privacy score": "Use strong passwords, enable encryption, and block trackers.", 
+            "what is Zero Trust security": "Zero Trust security means never trusting anyone by default, requiring continuous identity verification.", 
+            "how can AI improve cybersecurity": "AI detects anomalies, predicts attacks, and automates threat responses.", 
+            "what is an attack surface in cybersecurity": "An attack surface is the total number of entry points where an attacker can exploit vulnerabilities.", 
+            "what is a cybersecurity risk assessment": "It evaluates security threats, vulnerabilities, and potential attack impacts.", 
+            "how do companies protect against insider threats": "They use behavioral monitoring, access controls, and data loss prevention (DLP).",
+
+            // Default Response
+            "default": "I can help with cybersecurity-related topics. Try asking about breaches, privacy, or security tips."
+        };
+
+        function sendMessage() {
+            const userInput = document.getElementById("userInput").value.trim().toLowerCase();
+            if (userInput === "") return;
+
+            appendMessage("You: " + userInput, "user-message");
+
+            let botResponse = responses[userInput] || responses["default"];
+
+            setTimeout(() => appendMessage("Bot: " + botResponse, "bot-message"), 500);
+
+            document.getElementById("userInput").value = "";
+        }
+
+        function appendMessage(text, className) {
+            const chatMessages = document.getElementById("chatMessages");
+            const messageElement = document.createElement("div");
+            messageElement.textContent = text;
+            messageElement.classList.add("message", className);
+            chatMessages.appendChild(messageElement);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+

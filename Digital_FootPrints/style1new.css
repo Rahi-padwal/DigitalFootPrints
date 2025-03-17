@@ -1,0 +1,102 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px; /* Slightly larger for visibility */
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    font-weight: bold;
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+.close-btn:hover {
+    color: cyan;
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Ensure container has relative positioning */
+.container {
+    position: relative;
+    background: #1e1e1e;
+    padding: 50px;
+    max-width: 600px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.6);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+h1 {
+    font-size: 28px; /* Bigger font */
+    margin-bottom: 25px;
+    color: cyan;
+}
+
+input {
+    width: 100%;
+    max-width: 500px; /* Increased width */
+    padding: 18px;
+    margin: 20px 0;
+    border: 1px solid #444;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+button {
+    background: cyan;
+    color: black;
+    border: none;
+    padding: 18px 24px; /* Bigger button */
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    max-width: 500px; /* Same as input */
+}
+
+button:hover {
+    background: #00bcd4;
+    transform: scale(1.05);
+}
+
+
+#loginModal .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#loginModal .close-btn:hover {
+    color: cyan;
+}
+

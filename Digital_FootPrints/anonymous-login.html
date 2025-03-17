@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Login Detection</title>
+    <link rel="stylesheet" href="anonymous-login.css">
+</head>
+<body>
+    <div class="container">
+        <span class="close-btn" id="closePage">&times;</span>
+        <h2>Anonymous Login Detection</h2>
+        <p>Enter your email to check if it has been used in anonymous logins.</p>
+        <input type="email" id="anonymousEmail" placeholder="Enter your email">
+        <button id="checkAnonymousLogin">Check Now</button>
+        <div id="anonymousLoginResult"></div>
+    </div>
+
+    <a href="index.html" class="back-btn">Back to Home</a>
+
+    <script src="anonymous-login.js"></script>
+    <script>
+        document.querySelectorAll(".close-btn").forEach(function(button) {
+        button.addEventListener("click", function() {
+            window.location.href = "index.html"; // Change "index.html" to your actual homepage
+        });
+    });
+    </script>
+</body>
+</html>

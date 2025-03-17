@@ -1,0 +1,487 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1fefe;
+    scroll-behavior: smooth;
+}
+/* Header */
+.header {
+    background-color: #f1fefe;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header .title {
+    font-style: italic;
+    font-size: 28px;
+}
+.header .auth-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-right: 20px; /* Ensures Sign In button doesn't go off-screen */
+}
+
+.header .auth-links
+ a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn {
+    background-color: #0077cc;
+    color: white !important;
+    padding: 10px 18px; /* More padding for a better button shape */
+    border-radius: 8px;
+    white-space: nowrap; /* Prevents button text from breaking */
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+/* Sections */
+.section {
+    padding: 150px 20px;
+    text-align: center;
+}
+/* Main container */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left side text box */
+.left-box {
+    width: 50%;
+    color: black; /* Ensure visibility */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Right side feature grid */
+.right-box {
+    width: 50%;
+    text-align: center;
+}
+
+/* Feature grid (2 columns per row) */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between boxes */
+    width: 100%;
+}
+
+/* Feature box styling */
+.feature {
+    background: #c4d9df;
+    color: #002855;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    height: 100px; /* Uniform height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #8698c6;
+    box-sizing: border-box;
+}
+
+/* Privacy Score box - same size as others */
+.privacy-score {
+    grid-column: span 2; /* Stretches across both columns */
+}
+
+/* Hover effect */
+.feature:hover {
+    background: #94b2ff;
+    transform: scale(1.05);
+}
+
+
+
+
+/* Features Page */
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    gap: 20px;
+}
+
+.feature-box {
+    padding: 20px;
+    background-color: #c4d9df;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 40%; /* Ensures all boxes are the same size */
+    min-width: 300px; /* Prevents shrinking too much */
+    text-align: center;
+}
+
+/* Center the last feature ("Privacy Score") */
+.feature-box:nth-child(odd):last-child {
+    margin: 0 auto; /* Centers it on the second row */
+}
+
+.feature-box a {
+    text-decoration: none;
+    color: #0056b3;
+    transition: 0.3s ease-in-out;
+}
+
+.feature-box a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+.right-section a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.right-section a:hover {
+    color: #ffcc00;
+}
+
+/* Login Modal */
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px; /* Ensures consistent width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chatbot Button */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+.chatbot-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Chatbot Container */
+.chat-container {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Chat Header */
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Chat Messages */
+.chat-messages {
+    height: 340px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Section */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.chat-input button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Message Styles */
+.message {
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.bot-message {
+    background: #f1f1f1;
+    align-self: flex-start;
+}
+
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Height Page */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f8faff;
+}
+
+/* Content Wrapper */
+.content {
+    flex: 1; /* Pushes footer to the bottom */
+}
+
+/* Footer Styles */
+.footer {
+    background: #e3efff;
+    color: #333;
+    padding: 20px;
+    border-top: 2px solid #d0e2ff;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px;
+}
+
+/* Brand Section */
+.brand-section {
+    text-align: left;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0056b3;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    background: #0056b3;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* FAQ Section */
+.faq-section h3 {
+    margin-bottom: 10px;
+}
+
+.faq {
+    margin-bottom: 8px;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.2s;
+}
+
+.faq-question:hover {
+    background: #d0e2ff;
+}
+
+.arrow {
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 25px;
+    font-size: 13px;
+    color: #555;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Contact Section */
+.contact-section p {
+    margin: 5px 0;
+}
+
+.contact-section a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* Newsletter */
+.newsletter-section input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #0056b3;
+    background: #ffffff;
+}
+
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.subscribe-btn {
+    background: #0056b3;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #003d80;
+}
+
+/* Footer Note */
+.footer-note {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    padding-top: 8px;
+    border-top: 1px solid #d0e2ff;
+}

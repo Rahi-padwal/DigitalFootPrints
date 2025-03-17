@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Score Checker</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Main Container */
+        .container {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.6);
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        .close-btn:hover {
+            color: cyan;
+        }
+
+        /* Heading */
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: cyan;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #444;
+            background: #222;
+            color: white;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        input:focus {
+            border-color: cyan;
+        }
+
+        /* Button */
+        button {
+            background: cyan;
+            color: black;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+            width: 100%;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #00bcd4;
+            transform: scale(1.05);
+        }
+
+        /* Loading & Error Messages */
+        .loading, .error {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .loading {
+            color: cyan;
+        }
+
+        .error {
+            color: red;
+        }
+
+        /* Result Text */
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Close Button (Now Properly Added) -->
+        <span class="close-btn" id="closePage">&times;</span>
+
+        <h2>Enter Email ID to Check Privacy Score</h2>
+        <input type="email" id="email" placeholder="Enter email ID" required>
+        <button onclick="checkPrivacyScore()">Check</button>
+        <p class="loading" id="loading">Calculating...</p>
+        <p class="error" id="error"></p>
+        <p class="result" id="result"></p>
+    </div>
+    
+    <script>
+        document.getElementById("closePage").addEventListener("click", function() {
+    window.location.href = "index.html"; // Change "index.html" to your actual homepage
+});
+
+    </script>
+</body>
+</html>

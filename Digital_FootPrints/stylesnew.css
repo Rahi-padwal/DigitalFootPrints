@@ -1,0 +1,100 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    position: relative; /* Ensures close button is positioned relative to this */
+    max-width: 700px;
+    background: #1e1e1e;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.2s;
+    font-weight: bold;
+    z-index: 100; /* Ensure it stays on top */
+}
+
+.close-btn:hover {
+    color: cyan;
+    transform: scale(1.2);
+}
+
+/* Title */
+h2 {
+    color: cyan;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+input {
+    width: 92%;
+    max-width: 550px;
+    padding: 16px;
+    margin-top: 14px;
+    border: 2px solid cyan;
+    border-radius: 8px;
+    background: #222;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+}
+
+/* Button */
+button {
+    width: auto;
+    padding: 12px 24px;
+    background: cyan;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #00e6e6;
+}
+
+/* Result Box */
+#result {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Error and Success Messages */
+.error {
+    color: #FF4444;
+}
+
+.success {
+    color: #32CD32;
+}
